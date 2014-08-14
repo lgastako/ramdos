@@ -2,7 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
-  <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.3.0/ramda.min.js"></script>
-    <script src="rambdos.js"></script>
+    <title>ramdos</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link href="ramdos.css" rel="stylesheet">
+  <body ng-app="RamdosApp">
+    <div class="nav-view" ng-controller="NavController">
+      <ul>
+        <li ng-repeat="item in navItems"><a href="{{ item.href }}">{{ item.label }}</a></li>
+      </ul>
+    </div>
+    <div id="search" class="primary search-view" ng-controller="SearchController">
+      <input type="text" autofocus
+             placeholder="search for eg. 'laundry', 'meeting', 'taxes', 'John'..."
+             ng-model="query">
+
+      <p>The current query is: {{ query }}</p>
+    </div>
+    <div id="graph" class="primary graph-view" ng-controller="GraphController">
+      <h1>Graph View</h1>
+      <div id="graph-canvas">
+      </div>
+    </div>
+    <!-- must be below all other div.primary elements in the document -->
+    <div id="nullstate" class="primary nullstate-view" ng-controller="NullStateController">
+      <p>Please choose from the menu above.</p>
+    </div>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/ramda/ramda.js"></script>
+    <script src="ramdos.js"></script>

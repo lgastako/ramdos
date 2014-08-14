@@ -1,0 +1,54 @@
+body {
+    background-color: #ccc;
+}
+
+.nav-view {
+    background-color: #999;
+
+    border-bottom: 1px solid orange;
+
+    padding-top: 1em;
+
+    /* Dunno why we have to do this: */
+    position: relative;
+    top: -1em;
+}
+
+.nav-view a {
+    color: #456;
+}
+
+.nav-view ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-view li {
+    display: inline;
+    padding: 0.5em;
+}
+
+div.primary {
+    padding: 1em;
+}
+
+div.primary, .primary:target ~ #nullstate {
+    display: none;
+}
+
+#nullstate, .primary:target {
+    display: block;
+}
+
+/* Argh... doing this to follow .nav-view up the screen. */
+.primary {
+    position: relative;
+    top: -1em;
+}
+
+#search input {
+    border-radius: 5px;
+    width: 500px;
+
+    padding: 0.15em
+}
