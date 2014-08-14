@@ -1,0 +1,39 @@
+{
+  "name": "ramda",
+  "main": "ramda.js",
+  "version": "0.3.0",
+  "homepage": "https://github.com/CrossEye/ramda",
+  "authors": [
+    "(Scott Sauyet <scott@sauyet.com>)",
+    "(buzzdecafe <mh@buzzdecafe.com>)"
+  ],
+  "description": "A practical functional library for Javascript programmers.",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "functional"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "examples",
+    "logo"
+  ],
+  "_release": "0.3.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.3.0",
+    "commit": "d16d6fdf3323c42fe0e05c602d14c8fdd2043372"
+  },
+  "_source": "git://github.com/CrossEye/ramda.git",
+  "_target": "~0.3.0",
+  "_originalSource": "ramda",
+  "_direct": true
+}

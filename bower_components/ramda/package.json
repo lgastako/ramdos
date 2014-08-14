@@ -1,0 +1,46 @@
+{
+  "author": "CrossEye <scott@sauyet.com> (scott.sauyet.com)",
+  "contributors": [
+    {
+      "name": "buzzdecafe",
+      "email": "mh@buzzdecafe.com",
+      "web": "http://buzzdecafe.com"
+    },
+    {
+      "name": "Scott Sauyet",
+      "email": "scott@sauyet.com",
+      "web": "http://fr.umio.us"
+    }
+  ],
+  "name": "ramda",
+  "description": "A practical functional library for Javascript programmers.",
+  "version": "0.3.0",
+  "homepage": "https://www.github.com/CrossEye/ramda",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CrossEye/ramda.git"
+  },
+  "main": "ramda.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-cli": "~0.1.7",
+    "grunt-mocha": "~0.3.4",
+    "grunt-docco": "latest",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-mocha-test": "~0.5.0",
+    "grunt-benchmark": "https://github.com/buzzdecafe/grunt-benchmark/archive/09999a8c3fbfff04a1695846c1ccd0bd8a0ef5ab.tar.gz",
+    "benchmark": "~1.0.0",
+    "lodash": "latest",
+    "orchestrate": "~0.2.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-push-release": "^0.1.1"
+  }
+}
